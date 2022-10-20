@@ -1,2 +1,2 @@
-# MDN Web Docs Homepage Clone
+# 'MDN Web Ducks'
 A clone of the MDN Web Docs homepage.
