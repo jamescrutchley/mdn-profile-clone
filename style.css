@@ -1,0 +1,55 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.cta-container {
+
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header, .footer {
+    background-color: darkgray;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.header {
+    height: 10vh;
+}
+
+.header-logo {
+    width: 5vh;
+}
+
+.homepage-hero {
+    height: 50vh;
+    background-color: lightblue;
+}
+
+.featured-articles {
+    height: 75vh;
+    background-color: aliceblue;
+}
+
+.latest-news {
+    height: 75vh;
+    background-color: lightblue;
+}
+
+.recent-updates {
+    height: 75vh;
+    background-color: aliceblue;
+}
+
+.footer {
+    height: 10vh;
+}
