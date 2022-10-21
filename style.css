@@ -1,6 +1,10 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
@@ -31,13 +35,86 @@ body {
 }
 
 .homepage-hero {
+    
     height: 50vh;
     background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.hero-wrapper {
+    height: 50vh;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hero-search-form {
+    width: 90%;
+    height: relative;
+    padding-left: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-search-form button {
+    padding: 10px;
+    height: auto;
+    border: none;
+    margin-left: -35px;
+    cursor: pointer;
+    color: transparent;
+    background-color: transparent;
+}
+
+.hero-search-form input {
+    border-radius: 20px;
+    height: 100%;
+    border: none;
+    flex: 1;
+    outline: none;
+}
+
+.hero-search-form img {
+    height: 20px;
+}
+
+
+.hero-search-button-icon {
+    min-height: 100%;
 }
 
 .featured-articles {
-    height: 75vh;
     background-color: aliceblue;
+    margin: 1rem;
+    overflow: auto;
+}
+
+.featured-articles-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    border: solid grey 0.1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .latest-news {
@@ -45,9 +122,10 @@ body {
     background-color: lightblue;
 }
 
-.recent-updates {
-    height: 75vh;
-    background-color: aliceblue;
+
+
+.testimonial-icon {
+    width: 80px;
 }
 
 .footer {
