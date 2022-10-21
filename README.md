@@ -2,7 +2,7 @@
 A clone of the MDN Web Docs homepage.
 
 ## To Do:
-- [x] Initial content and layout
+- [x] Initial content and layout (Mobile-first)
 - [ ] Add breakpoints for responsive design
 - [ ] Implement ARIA and accessibility for screen-readers, keyboard only users
 - [ ] Implement expand-collapse nav sections
