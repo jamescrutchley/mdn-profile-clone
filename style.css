@@ -1,8 +1,9 @@
-body {
+body, html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    margin: 0;
     background-color: grey;
+    margin: 0;
+    display: block;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -15,7 +16,25 @@ a {
 }
 
 .cta-container {
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(79, 100, 120);
+    color: white;
+}
 
+.cta-content-highlight, .cta-content-highlight a {
+    font-size: 1.3rem;
+    color: red;
+}
+
+#cta-controls {
+    width: 1rem;
+}
+
+#cta-controls img {
+    width: 1rem;
 }
 
 .page-wrapper {
@@ -26,13 +45,14 @@ a {
 
 .header {
     background-color: rgb(31, 31, 31);
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0.3rem 1rem 0.3rem 1rem;
+    /* padding: 0.3rem 1rem 0.3rem 1rem; */
     align-items: stretch;
+    padding: 0.3rem 1rem 0.3rem 1rem; 
 }
 
 .header>button {
@@ -69,7 +89,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 1rem;
+    padding: 1rem; */
 }
 
 .hero-wrapper {
@@ -91,10 +111,10 @@ a {
 }
 
 .hero-search-form button {
-    padding: 10px;
+    padding: 1rem;
     height: auto;
     border: none;
-    margin-left: -35px;
+    margin-left: -3rem;
     cursor: pointer;
     color: transparent;
     background-color: transparent;
@@ -123,12 +143,12 @@ a {
 
 .featured-articles {
     background-color: aliceblue;
-    margin: 1rem;
+    padding: 1rem; */
     overflow: auto;
 }
 
 .featured-articles h2 {
-    font-size: 22px;
+    font-size: 1.2rem;
 }
 
 .featured-articles-wrapper {
@@ -183,12 +203,12 @@ a {
 
 .latest-news {
     background-color: lightblue;
-    margin: 1rem;
+    padding: 1rem; */
     padding: 1rem 0rem 1rem 0rem;
 }
 
 .latest-news h2 {
-    font-size: 22px;
+    font-size: 1rem;
 }
 
 .news-feed {
@@ -201,7 +221,7 @@ a {
 }
 
 .news-feed .news-item:nth-child(odd) {
-    background-color: aliceblue;
+    background-color: rgb(199, 249, 255);
 }
 
 .news-item {
@@ -214,34 +234,33 @@ a {
     align-items: flex-start;
     justify-content: space-evenly;
     gap: 0.3rem;
-    background-color: rgb(255, 240, 242);
+    background-color: lightblue;
     overflow: hidden;
+    border-radius: 0.2rem;
 }
 
 .news-item a:first-child {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
-.news-item a:last-child {
-    font-size: 1.1rem;
+.news-item a {
+    font-size: 0.6rem;
+    color: rgb(41, 41, 41);
 }
 
 .news-item p {
-    font-size: 0.9rem;
-}
-
-.news-feed:nth-child(odd) {
-    background-color: lightgrey;
+    font-size: 0.7rem;
 }
 
 
 /* Testimonial Section */
 
 .testimonial-container {
-    margin: 1rem;
+    padding: 1rem; 
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    background-color: rgb(212, 255, 255);
 }
 
 .testimonial-container h3 {
@@ -278,10 +297,6 @@ a {
     margin-bottom: 2rem;
 }
 
-.footer {
-    height: 10vh;
-}
-
 .testimonial-container blockquote {
     font-style: italic;
 }
@@ -293,4 +308,7 @@ a {
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
+    background-color: rgb(31, 31, 31);
+    color: whitesmoke;
+    padding: 0.5rem;
 }
