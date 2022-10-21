@@ -9,15 +9,19 @@
 <body>
     <div class="cta-container">
         <div id="cta-content">This is a popup. Maybe it links to something new and exciting.</div>
-        <div id="cta-controls"></div>
+        <div id="cta-controls">
+
+        </div>
     </div>
     <div class="homepage-wrapper">
         <div class="header"> 
-            <div class="logo">
-                Mozilla Web Ducks Header
-                <img class="header-logo" src="./duck.svg" alt="cartoon duck"></img>
+            <div class="header-logo">
+                <img class="header-icon" src="./duck.svg" alt="cartoon duck"></img>
+                <p>Mozilla Web Ducks</p>
             </div>
-            <button aria-label="Open main menu" type="button"></button>
+            <button aria-label="Open main menu" type="button">
+                <img src="./menu.svg" alt="Menu drop down icon">
+            </button>
         </div>
 
         <div class="content" role="main">
@@ -49,7 +53,7 @@
                         <div class="card">
                             <a href="">Topic</a>
                             <h3>Article Two</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati modi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati modi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. saepe quam ipsa, accusantium quis.</p>
                         </div>
 
                         <div class="card">
@@ -66,24 +70,21 @@
                 <ul class="news-feed">
 
                     <li class="news-item">
-                        <p class="news-title">
-                            <a href="example.com">Source</a>
-                            <a href="example.com">Source Website</a>
-                        </p>
+                        <a href="example.com">Source</a>
+                        <a href="example.com">Source Website</a>
+                        <p>A month ago</p>
                     </li>
 
                     <li class="news-item">
-                        <p class="news-title">
-                            <a href="example.com">Source</a>
-                            <a href="example.com">Source Website</a>
-                        </p>
+                        <a href="example.com">Source</a>
+                        <a href="example.com">Source Website</a>
+                        <p>A month ago</p>
                     </li>
 
                     <li class="news-item">
-                        <p class="news-title">
-                            <a href="example.com">Source</a>
-                            <a href="example.com">Source Website</a>
-                        </p>
+                        <a href="example.com">This Just In: Some News About Something</a>
+                        <a href="example.com">Source Website</a>
+                        <p>A month ago</p>
                     </li>
 
                 </ul>
@@ -93,20 +94,36 @@
                 <div class="testimonial-container">
                     <h3>Customer Testimonial</h3>
                     <a class="testimonial-name" href="www.example.com">John Smith</a>
-                    <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit!</blockquote>
+                    <span><img src="./quote-left-icon.svg" alt="Left quotation marks"></span>
+                    <blockquote>Duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck duck, etc.</blockquote>
+                    <a class="testimonial-cta" href="placeholder.com">
+                        Get involved →
+                    </a>
                     <img class="testimonial-icon" src="./duck-testimonial.svg" alt="duck icon">
                 </div>
 
         </div>
 
         <div class="footer">
-            <p>mdn</p>
-            <p>Some text here.</p>
-            <img src="" alt="">
-            <img src="" alt="">
-            <p>About</p>
-            <p>Blogs</p>
-            <p>Careers</p>
+            <div class="footer-main">
+                <p>mdn</p>
+                <p>Some text here.</p>
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+
+            <div class="footer-nav-one">
+                <p>About</p>
+                <p>Blogs</p>
+                <p>Careers</p>
+            </div>
+
+            <div class="footer-nav-two">
+                <p>Support</p>
+                <p>Product help</p>
+                <p>Report page issue</p>
+                <p>Report site issue</p>
+            </div>
         </div>
 
     </div>
