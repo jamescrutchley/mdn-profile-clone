@@ -7,7 +7,7 @@
     <title>MDN Web Ducks</title>
 </head>
 <body>
-    <div id="cta-overlay">
+    <div id="cta-overlay" class="sticky">
         <div class="cta-container">
             <div id="cta-content"><span class="cta-content-highlight pointer">This is a popup.</span> Maybe it links to something new and exciting.<span class="cta-content-highlight pointer"><br><a> Learn more →</a></span></div>
             <div id="cta-controls">
@@ -20,13 +20,38 @@
         <div class="content" role="main">
         
         <div class="header"> 
-            <div class="header-logo">
-                <img class="header-icon" src="icons/duck.svg" alt="cartoon duck"></img>
-                <p>Mozilla Web Ducks</p>
+            <div class="header-top">
+                <div class="header-logo">
+                    <img class="header-icon" src="icons/duck.svg" alt="cartoon duck"></img>
+                    <p>Mozilla Web Ducks</p>
+                </div>
+                <button onClick={ToggleNav()} aria-label="Open main menu" type="button">
+                    <img src="icons/menu.svg" alt="Menu drop down icon">
+                </button>
             </div>
-            <button aria-label="Open main menu" type="button">
-                <img src="icons/menu.svg" alt="Menu drop down icon">
-            </button>
+
+            <div class="nav-main" id="nav-main">
+                <div class="theme-switch">
+                    <button>Theme</button>
+                </div>
+                <div class="nav-auth-container">
+                    <button>Become Premium Duck</button>
+                    <a href="">Already a subscriber?</a>
+                    <form action="" class="nav-search-form">
+                        <input type="search" class="nav-search-input" placeholder=" " autocomplete="off">
+                        <button type="submit" class="nav-search-button">
+                                <img class="nav-search-button-icon" src="icons/search.svg" alt="Search icon"></img>
+                        </button>
+                    </form>
+                </div>
+                <div class="nav-main-categories">
+                    <ul class="nav-main-categories-list">
+                        <li>References</li>
+                        <li>Guides</li>
+                        <li>Web Ducks Premium</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         
