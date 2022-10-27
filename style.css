@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6, p {
 a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .cta-overlay {
@@ -150,6 +151,8 @@ opacity: 1;
     border: none;
     flex: 1;
     outline: none;
+    padding-left: 1em;
+    font-size: 1.2em;
 }
 
 .hero-search-form img {
@@ -208,6 +211,7 @@ opacity: 1;
     text-decoration: none;
     color: black;
     font-size: 20px;
+    width: fit-content;
 }
 
 .card h3 {
@@ -270,6 +274,7 @@ opacity: 1;
 .news-item a {
     font-size: 0.6rem;
     color: rgb(41, 41, 41);
+    cursor: pointer;
 }
 
 .news-item p {
@@ -305,7 +310,7 @@ opacity: 1;
 .testimonial-container a {
     background-color: transparent;
     font-weight: 600;
-    
+    cursor: pointer;
 }
 
 .testimonial-cta {
