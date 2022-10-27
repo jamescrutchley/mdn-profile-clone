@@ -7,10 +7,12 @@
     <title>MDN Web Ducks</title>
 </head>
 <body>
-    <div class="cta-container">
-        <div id="cta-content"><span class="cta-content-highlight">This is a popup.</span> Maybe it links to something new and exciting.<span class="cta-content-highlight"><br><a> Learn more →</a></span></div>
-        <div id="cta-controls">
-            <img src="icons/cancel.svg" alt="Close popup">
+    <div id="cta-overlay">
+        <div class="cta-container">
+            <div id="cta-content"><span class="cta-content-highlight">This is a popup.</span> Maybe it links to something new and exciting.<span class="cta-content-highlight"><br><a> Learn more →</a></span></div>
+            <div id="cta-controls">
+                <a onclick={CloseCta()} href="#">&times;</a>
+            </div>
         </div>
     </div>
     <div class="homepage-wrapper">
@@ -130,5 +132,7 @@
         </div>
     </div>
     </div>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
