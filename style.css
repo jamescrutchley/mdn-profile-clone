@@ -172,6 +172,16 @@ opacity: 1;
     background-color: whitesmoke;
 }
 
+.hero-search-form input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.display-clear { 
+    display: none; 
+}
+
+
+
 .hero-search-form:focus {
     box-shadow: black 100px solid;
 }
