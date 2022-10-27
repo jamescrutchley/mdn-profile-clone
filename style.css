@@ -16,6 +16,11 @@ a {
     cursor: pointer;
 }
 
+.text-underline {
+    text-decoration: underline blue;
+    text-underline-position: auto;
+}
+
 .cta-overlay {
 /* display: none; */
 position: fixed;
@@ -125,6 +130,17 @@ opacity: 1;
     justify-content: space-evenly;
 }
 
+.hero-wrapper h1 {
+    width: fit-content;
+}
+
+.hero-wrapper h1::after {
+    content: " ";
+    text-decoration: underline;
+    text-decoration-color: blue;
+    /* text-underline-offset: 0.rem; */
+}
+
 .hero-search-form {
     width: 90%;
     height: relative;
@@ -153,12 +169,16 @@ opacity: 1;
     outline: none;
     padding-left: 1em;
     font-size: 1.2em;
+    background-color: whitesmoke;
+}
+
+.hero-search-form:focus {
+    box-shadow: black 100px solid;
 }
 
 .hero-search-form img {
     height: 20px;
 }
-
 
 .hero-search-button-icon {
     min-height: 100%;
