@@ -14,53 +14,31 @@ const ToggleNav = () => {
     }
 };
 
-// const ToggleSubNav = (id) => {
-//     const subNav = document.getElementById(id);
-//     if (subNav.style.display === 'none') {
-//         subNav.style.display = 'block';
-//     } else {
-//         subNav.style.display = 'none';
-//     }
-// };
+const buttonEvents = () => {
 
-const ToggleCategories = () => {
-    const nav = document.getElementById('nav-main');
-    if (nav.style.display === 'none') {
-        nav.style.display = 'block';
-    } else {
-        nav.style.display = 'none';
-    }
+    let subcategoryButtons = document.getElementsByClassName('nav-subcategories-button');
+
+    for (i = 0; i < subcategoryButtons.length; i++) {
+        let buttonId = subcategoryButtons[i].id;
+        subcategoryButtons[i].addEventListener('click', function() {
+            let category = buttonId.split('-')[1];
+            let section = document.getElementById('nav-'+ category);
+            let icon = document.getElementById(buttonId.replace(buttonId.slice(-7), '-icon'));
+
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                icon.style.transform = 'rotate(270deg)';    
+            } else {
+                section.style.display = 'none';
+                icon.style.transform = 'rotate(90deg)';
+            }
+        }
+    );
 };
+}
 
+window.onload = (event) => {
+    console.log('page is fully loaded');
+    buttonEvents();
+}
 
-//  make generic and onload.
-
-document.getElementById('nav-references-button').addEventListener("click", function() {
-    const subcategory = document.getElementById('nav-references');
-    const icon = document.getElementById(`nav-references-icon`);
-    if (subcategory.style.display === 'none') {
-        subcategory.style.display = 'block';
-        icon.style.transform = 'rotate(90deg)';
-      } else {
-        subcategory.style.display = 'none';
-        icon.style.transform = 'rotate(270deg)';
-    }
-})
-
-document.getElementById('nav-guides-button').addEventListener("click", function() {
-    const subcategory = document.getElementById('nav-guides');
-    if (subcategory.style.display === 'none') {
-        subcategory.style.display = 'block';
-      } else {
-        subcategory.style.display = 'none';
-    }
-})
-
-document.getElementById('nav-premium-button').addEventListener("click", function() {
-    const subcategory = document.getElementById('nav-premium');
-    if (subcategory.style.display === 'none') {
-        subcategory.style.display = 'block';
-      } else {
-        subcategory.style.display = 'none';
-    }
-})

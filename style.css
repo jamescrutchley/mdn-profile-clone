@@ -217,6 +217,9 @@ opacity: 1;
     color: white;
 }
 
+#nav-references {
+    display: none;
+}
 
 /* Nav subcategories */
 
