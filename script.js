@@ -7,10 +7,13 @@ const CloseCta = () => {
 
 const ToggleNav = () => {
     const nav = document.getElementById('nav-main');
+    const icon = document.getElementById('nav-toggle-icon')
     if (nav.style.display === 'none') {
         nav.style.display = 'block';
+        icon.src = "icons/cancel.svg";
     } else {
         nav.style.display = 'none';
+        icon.src = "icons/menu.svg";
     }
 };
 

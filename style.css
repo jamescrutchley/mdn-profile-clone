@@ -54,7 +54,7 @@ opacity: 1;
 
 #cta-controls a {
     font-size: 2em;
-    color: black;
+    color: whitesmoke;
 }
 
 #cta-controls a:hover {
@@ -135,8 +135,13 @@ opacity: 1;
 
 #nav-toggle-icon {
     width: 1.5em;
-    color: white;
 }
+
+.cancel {
+    filter: invert(1);
+}
+
+
 
 .theme-switch {
     display: flex;
@@ -224,7 +229,6 @@ opacity: 1;
     justify-content: flex-start;
     align-items: flex-start;
     background-color: #1b1b1b;
-
 }
 
 
@@ -241,6 +245,7 @@ opacity: 1;
     background-color: #1b1b1b;
     width: 100%;
     padding: 0;
+    margin-bottom: 0;
 }
 
 
@@ -336,9 +341,8 @@ opacity: 1;
     justify-content: space-evenly;
 }
 
-.hero-wrapper h1, p {
+.hero-wrapper > h1, .herowrapper > p {
     width: fit-content;
-    color: #fff;
     color: #fff;
     font-weight: 100;
 }
@@ -424,7 +428,7 @@ opacity: 1;
 
 
 .featured-articles {
-    background-color: aliceblue;
+    background-color: #fff;
     padding: 1rem; */
     overflow: auto;
 }
@@ -450,14 +454,14 @@ opacity: 1;
 .card {
     max-height: 8rem;
     min-height: 4rem;
-    border: solid grey 0.1rem;
+    border: solid rgb(230, 230, 230) 0.1rem;
     display: flex;
     flex-flow: column nowrap;
     padding: 1rem;
     border-radius: 1rem;
     gap: 0.5rem;
     overflow: hidden;
-    background-color: rgb(204, 240, 255);
+    background-color: whitesmoke;
 }
 
 
@@ -486,7 +490,7 @@ opacity: 1;
 /* News Section */
 
 .latest-news {
-    background-color: lightblue;
+    background-color: #fff;
     padding: 1rem; */
     padding: 1rem 0rem 1rem 0rem;
 }
@@ -505,7 +509,7 @@ opacity: 1;
 }
 
 .news-feed .news-item:nth-child(odd) {
-    background-color: rgb(199, 249, 255);
+    background-color: whitesmoke;
 }
 
 .news-item {
@@ -518,7 +522,7 @@ opacity: 1;
     align-items: flex-start;
     justify-content: space-evenly;
     gap: 0.3rem;
-    background-color: lightblue;
+    background-color: white;
     overflow: hidden;
     border-radius: 0.2rem;
 }
@@ -545,7 +549,10 @@ opacity: 1;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    background-color: rgb(212, 255, 255);
+    background: linear-gradient(-45deg, #1b1b1b, #000000, #47798b, #4d4d4d);
+    background-size: 400% 400%;
+    animation: gradient 45s ease infinite;
+    color: whitesmoke;
 }
 
 .testimonial-container h3 {
@@ -563,8 +570,8 @@ opacity: 1;
     margin-left: 1rem;
 }
 
-.testimonial-container a {
-    background-color: transparent;
+.testimonial-name {
+    background-color: whitesmoke;
     font-weight: 600;
     cursor: pointer;
 }
@@ -591,13 +598,61 @@ opacity: 1;
 }
 
 
-/* Footer */
+/* bottom nav */
 
-.footer {
+.bottom-nav {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     gap: 1rem;
     background-color: rgb(31, 31, 31);
     color: whitesmoke;
     padding: 0.5rem;
+}
+
+.bottom-nav-main p:first-child {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.bottom-nav-block p:first-child {
+    font-size: 1.2em;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    color: black;
+    padding: 0.5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links p, .footer-links a {
+    font-size: 0.8em;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    color:rgb(41, 41, 41)
+}
+
+.footer-links a {
+    color:rgb(255, 110, 110);
+}
+
+.footer-logo {
+    width: fit-content;
+    background-color: #4d4d4d;
+    color: whitesmoke;
+    font-size: 2em;
+    padding: 0.1em;
+    margin-bottom: 1rem;
 }
