@@ -638,7 +638,8 @@ opacity: 1;
 }
 
 .bottom-nav-main {
-    margin-bottom: 1rem;
+    margin: 0rem 1rem 1rem 0rem;
+    font-size: 0.85rem;
 }
 
 .bottom-nav-main>img {
@@ -734,7 +735,7 @@ opacity: 1;
     .bottom-nav {
         display: grid;
         grid-template-areas: "logo nav1 nav2 nav3 nav4";
-        grid-template-columns: 22% minmax(18%, max-content);
+        grid-template-columns: 24% minmax(16%, max-content);
     }
 }
 
