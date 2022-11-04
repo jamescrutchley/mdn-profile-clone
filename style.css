@@ -631,8 +631,14 @@ opacity: 1;
     gap: 1rem;
     background-color: #fff;
     color: rgb(16, 16, 16);
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     font-size: 0.75rem;
+    margin-bottom: 2rem;
+    border-bottom: rgba(165, 165, 165, 0.454) solid 0.05rem;
+}
+
+.bottom-nav-main {
+    margin-bottom: 1rem;
 }
 
 .bottom-nav-main>img {
@@ -649,11 +655,6 @@ opacity: 1;
 .bottom-nav-block p:first-child {
     font-size: 1.3em;
     padding-bottom: 0.2em;
-}
-
-.bottom-nav-four {
-    border-bottom: whitesmoke solid 0.2em;
-    padding-bottom: 2em;
 }
 
 
