@@ -1,5 +1,5 @@
 # 'MDN Web Ducks'
-A clone of the MDN Web Docs homepage.
+Ground-up clone of the MDN Web Docs homepage, with a few choice tweaks. 
 
 ## To Do:
 - [x] Initial content and layout (Mobile-first)
