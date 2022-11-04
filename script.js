@@ -1,4 +1,3 @@
-
 const CloseCta = () => {
     const popup = document.getElementById('cta-overlay');
     popup.style.display = 'none';
@@ -44,4 +43,3 @@ window.onload = (event) => {
     console.log('page is fully loaded');
     buttonEvents();
 }
-
