@@ -630,8 +630,15 @@ opacity: 1;
     flex-flow: column wrap;
     gap: 1rem;
     background-color: #fff;
-    color: black;
+    color: rgb(16, 16, 16);
     padding: 1rem;
+    font-size: 0.75rem;
+}
+
+.bottom-nav-main>img {
+    width: 1rem;
+    padding-top: 1rem;
+    filter: contrast(40%);
 }
 
 .bottom-nav-main p:first-child {
@@ -700,6 +707,36 @@ opacity: 1;
 }
 
 
+@media screen and (min-width: 400px) {
+    .bottom-nav {
+        display: grid;
+        grid-template-areas: "logo ." "nav1 nav2" "nav3 nav4";
+    }
+    .bottom-nav-main {
+        grid-area: logo;
+    }
+    .bottom-nav-one {
+        grid-area: nav1;
+    }
+    .bottom-nav-two {
+        grid-area: nav2;
+    }
+    .bottom-nav-three {
+        grid-area: nav3;
+    }
+    .bottom-nav-four {
+        grid-area: nav4;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .bottom-nav {
+        display: grid;
+        grid-template-areas: "logo nav1 nav2 nav3 nav4";
+        grid-template-columns: 22% minmax(18%, max-content);
+    }
+}
+
 @media screen and (min-width: 800px) {
     .card-container {
         grid-template-columns: repeat(2,1fr);
@@ -708,6 +745,5 @@ opacity: 1;
     .hero-wrapper>h1 {
         font-size: ;
     }
-
-
 }
+
