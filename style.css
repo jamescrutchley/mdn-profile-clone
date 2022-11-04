@@ -323,7 +323,6 @@ opacity: 1;
 /* Hero Section */
 
 .homepage-hero {
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -346,10 +345,10 @@ opacity: 1;
 }
 
 .hero-wrapper {
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 2rem;
 }
 
 .hero-wrapper > h1, .hero-wrapper > p {
@@ -359,7 +358,7 @@ opacity: 1;
 }
 
 .hero-wrapper h1 {
-    font-size: 1.6em;
+    font-size: calc(40px + 0.390625vw);;
 }
 
 .hero-wrapper h1::after {
@@ -706,8 +705,8 @@ opacity: 1;
         grid-template-columns: repeat(2,1fr);
     }
 
-    .testimonial-container {
-        flex-direction: row;
+    .hero-wrapper>h1 {
+        font-size: ;
     }
 
 
