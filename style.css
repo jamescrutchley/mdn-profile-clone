@@ -1,9 +1,14 @@
 body, html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-family: Inter,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-size: calc(15px + 0.390625vw);
     margin: 0;
     display: block;
 }
+
+/* breakpoints */
+
+
+
 
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
@@ -53,7 +58,7 @@ opacity: 1;
 }
 
 #cta-controls a {
-    font-size: 2em;
+    font-size: 2rem;
     color: whitesmoke;
 }
 
@@ -129,6 +134,12 @@ opacity: 1;
 
 .nav-toggle-button {
     background-color: transparent;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.nav-toggle-button:hover {
+    background-color: rgb(164, 164, 164);
     border: none;
 }
 
@@ -383,6 +394,10 @@ opacity: 1;
     background-color: transparent;
 }
 
+.hero-search-form button:hover {
+    filter: invert(0.5) hue-rotate(20deg) sepia(439%) saturate(5909%) invert(1);
+}
+
 .hero-search-form input {
     border-radius: 20px;
     height: 100%;
@@ -435,6 +450,7 @@ opacity: 1;
 
 .featured-articles h2 {
     font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .featured-articles-wrapper {
@@ -446,9 +462,8 @@ opacity: 1;
 }
 
 .card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: grid;
+    grid-gap: 1rem;
 }
 
 .card {
@@ -458,30 +473,34 @@ opacity: 1;
     display: flex;
     flex-flow: column nowrap;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     gap: 0.5rem;
     overflow: hidden;
     background-color: white;
 }
 
-
 .card a {
     flex: 1 1 auto;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+    font-size: 1rem;
     width: fit-content;
+    font-weight: 500;
 }
 
-.card h3 {
-    font-weight: 600;
-    font-size: 20px;
+.card > a:first-child {
+    font-size: 0.9rem;
     flex: 1 1 auto;
+    font-weight: 500;
+}
+
+.card h3:hover, .card a:hover {
+    text-decoration: underline black 0.1rem;
+    cursor: pointer;
 }
 
 .card p {
     flex: 1 1 auto;
     color: black;
+    font-size: 0.9rem;
 }
 
 
@@ -506,6 +525,8 @@ opacity: 1;
     align-items: flex-start;
     width: 100%;
     padding-left: 1rem;
+    padding-right: 1rem;
+
 }
 
 .news-feed .news-item:nth-child(odd) {
@@ -514,7 +535,7 @@ opacity: 1;
 
 .news-item {
     padding: 0.5rem;
-    width: 90%;
+    width: 100%;
     height: 5rem;
     display: flex;
     flex: 1 1 auto;
@@ -545,7 +566,7 @@ opacity: 1;
 /* Testimonial Section */
 
 .testimonial-container {
-    padding: 1rem; 
+    padding: 32px 16px 32px 16px; 
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -577,10 +598,14 @@ opacity: 1;
 }
 
 .testimonial-cta {
-    color:#0000EE;
-    cursor: auto;
+    color: #00ffff;
+    cursor: pointer;
     display: flex;
     align-items: center;
+}
+
+.testimonial-cta:hover {
+    text-decoration: underline solid 0.1rem #00ffff;
 }
 
 .testimonial-icon {
@@ -672,4 +697,17 @@ opacity: 1;
     justify-content: space-between;
     border-top: whitesmoke solid 0.2em;
     padding-top: 1em;
+}
+
+
+@media screen and (min-width: 800px) {
+    .card-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .testimonial-container {
+        flex-direction: row;
+    }
+
+
 }
