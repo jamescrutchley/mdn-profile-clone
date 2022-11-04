@@ -633,6 +633,7 @@ opacity: 1;
     gap: 2rem;
     color: black;
     padding-left: 1rem;
+    padding-right: 1rem;
     margin-top: 1rem;
 }
 
@@ -665,7 +666,7 @@ opacity: 1;
 }
 
 .meta-footer {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-content: stretch;
     justify-content: space-between;
