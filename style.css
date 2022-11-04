@@ -129,7 +129,6 @@ opacity: 1;
 
 .nav-toggle-button {
     background-color: transparent;
-    color: transparent;
     border: none;
 }
 
@@ -177,6 +176,7 @@ opacity: 1;
     padding: 0.4em 1em 0.4em 1em;
     border: none;
     border-radius: .2em;
+    font-weight:bold;
 }
 
 .nav-search-form {
@@ -341,7 +341,7 @@ opacity: 1;
     justify-content: space-evenly;
 }
 
-.hero-wrapper > h1, .herowrapper > p {
+.hero-wrapper > h1, .hero-wrapper > p {
     width: fit-content;
     color: #fff;
     font-weight: 100;
@@ -461,7 +461,7 @@ opacity: 1;
     border-radius: 1rem;
     gap: 0.5rem;
     overflow: hidden;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 
@@ -551,7 +551,7 @@ opacity: 1;
     align-items: center;
     background: linear-gradient(-45deg, #1b1b1b, #000000, #47798b, #4d4d4d);
     background-size: 400% 400%;
-    animation: gradient 45s ease infinite;
+    animation: gradient 30s ease infinite;
     color: whitesmoke;
 }
 
@@ -604,9 +604,9 @@ opacity: 1;
     display: flex;
     flex-flow: column wrap;
     gap: 1rem;
-    background-color: rgb(31, 31, 31);
-    color: whitesmoke;
-    padding: 0.5rem;
+    background-color: #fff;
+    color: black;
+    padding: 1rem;
 }
 
 .bottom-nav-main p:first-child {
@@ -615,7 +615,13 @@ opacity: 1;
 }
 
 .bottom-nav-block p:first-child {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    padding-bottom: 0.2em;
+}
+
+.bottom-nav-four {
+    border-bottom: whitesmoke solid 0.2em;
+    padding-bottom: 2em;
 }
 
 
@@ -626,7 +632,8 @@ opacity: 1;
     flex-flow: column nowrap;
     gap: 2rem;
     color: black;
-    padding: 0.5rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
 }
 
 .footer-links {
@@ -634,7 +641,7 @@ opacity: 1;
     flex-flow: row wrap;
     justify-content: flex-start;
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .footer-links p, .footer-links a {
@@ -644,7 +651,7 @@ opacity: 1;
     color:rgb(41, 41, 41)
 }
 
-.footer-links a {
+.footer-links a:last-child {
     color:rgb(255, 110, 110);
 }
 
@@ -655,4 +662,13 @@ opacity: 1;
     font-size: 2em;
     padding: 0.1em;
     margin-bottom: 1rem;
+}
+
+.meta-footer {
+    width: 90%;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    border-top: whitesmoke solid 0.2em;
+    padding-top: 1em;
 }
