@@ -168,7 +168,7 @@ opacity: 1;
 }
 
 .nav-auth-container * {
-    color: white;
+    color: whitesmoke;
 }
 
 .nav-auth-container button {
@@ -178,6 +178,10 @@ opacity: 1;
     border: none;
     border-radius: .2em;
     font-weight:bold;
+}
+
+.nav-auth-container button:hover {
+    background-color: #c2c2c2;
 }
 
 .nav-search-form {
@@ -270,8 +274,13 @@ opacity: 1;
     justify-content: space-between;
     align-items: center;
     background-color: #1b1b1b;
-    color: white;
+    color: rgb(195, 195, 195);
     border: 1px solid rgb(159, 159, 159); border-width: 1px 0px 0px 0px;
+}
+
+.nav-subcategories-button:hover {
+    cursor: pointer;
+    color: whitesmoke;
 }
 
 
